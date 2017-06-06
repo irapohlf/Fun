@@ -14,7 +14,7 @@ public class NextPermutation {
 
     private void readLines() {
         Scanner sc = new Scanner(System.in);
-        int numLines = Integer.parseInt(sc.next());
+        int numLines = sc.nextInt();
 
         if (numLines <= 0) {
             return;
