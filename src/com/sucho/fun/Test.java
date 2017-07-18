@@ -10,6 +10,18 @@ import java.util.Scanner;
  */
 public class Test {
     public static void main(String[] args) {
+
+        int t1 = -1024;
+        int t2 = 1024*1024*1024;
+
+        System.out.println(t1 << 2);
+        //System.out.println(t1 <<< 2);
+        System.out.println(t1 >> 2);
+        System.out.println(t1 >>> 2);
+        System.out.println(t2);
+        System.out.println(t2 << 1);
+        System.out.println(t2 << 2);
+        System.out.println(t2 << 3);
         Scanner scan = new Scanner(System.in);
 
         HashMap<Integer, ArrayList<Integer>> cityMap = new HashMap<>();
