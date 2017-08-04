@@ -1,4 +1,4 @@
-package com.sucho.fun;
+package com.sucho.fun.trie;
 
 import java.util.Scanner;
 
