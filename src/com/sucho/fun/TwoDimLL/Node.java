@@ -19,4 +19,32 @@ public class Node {
         this.right = right;
         this.down = down;
     }
+
+    // 1D linked list reversing
+    private static Node rev(Node r) {
+        Node p = null;
+        Node c = r;
+
+        while (c != null) {
+            Node n = c.right;
+            c.right = p;
+            p = c;
+            c = n;
+        }
+
+        return p;
+    }
+
+    private static void print(Node r) {
+        while (r != null) {
+            System.out.println(r.val);
+            r = r.right;
+        }
+    }
+
+    public static void main(String[] args) {
+        Node A = new Node("A", new Node ("B", new Node("C", null, null), null), null);
+        print(A);
+        print(rev(A));
+    }
 }
